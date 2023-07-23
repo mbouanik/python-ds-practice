@@ -21,3 +21,11 @@ def sum_pairs(nums, goal):
         >>> sum_pairs([11, 20, 4, 2, 1, 5], 100)
         ()
     """
+    count = {}
+    for i, n in enumerate(nums):
+        diff = goal - n
+        if diff in count:
+            return(diff, n)
+        else:
+            count[n] = i
+    return tuple()
