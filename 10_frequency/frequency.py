@@ -12,4 +12,3 @@ def frequency(lst, search_term):
         if num == search_term:
             i += 1
     return i
-print(frequency([1, 4, 3, 4, 4], 7))
