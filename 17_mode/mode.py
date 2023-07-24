@@ -20,4 +20,3 @@ def mode(nums):
             c = count[n]
             res = n
     return res
-    
