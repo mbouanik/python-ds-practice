@@ -5,7 +5,7 @@ def read_file_list(filename):
         Fido
         Whiskey
         Dr. Sniffle
-
+  
     This should work:
 
         >>> read_file_list("dogs")
@@ -20,5 +20,9 @@ def read_file_list(filename):
     # (end-of-line character) at the end of each line, and you want to
     # strip that off before you print it. Do some research on that!
 
-    with  open(filename,'r') as f:
-        return ''.join(f.readlines())
+    with open(filename,'r') as f:
+        for name in f.readlines():
+            print(f'- {name.strip()}')
+
+
+print(read_file_list("dogs"))
